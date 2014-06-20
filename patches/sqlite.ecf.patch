@@ -1,0 +1,14 @@
+--- sqlite.ecf	2012-01-11 10:01:42.000000000 -0500
++++ Eiffel73/unstable/library/persistency/database/sqlite3/sqlite.ecf	2013-09-26 21:47:44.221662812 -0400
+@@ -30,6 +30,11 @@
+ 				<multithreaded value="false"/>
+ 			</condition>
+ 		</external_library>
++		<external_linker_flag value="-lsqlite3">
++			<condition>
++				<platform excluded_value="windows"/>
++			</condition>
++		</external_linker_flag>
+ 		<external_library location="$(ISE_LIBRARY)/unstable/library/persistency/database/sqlite3/spec/$(ISE_PLATFORM)/lib/libmtesqlite.a">
+ 			<condition>
+ 				<platform excluded_value="windows"/>

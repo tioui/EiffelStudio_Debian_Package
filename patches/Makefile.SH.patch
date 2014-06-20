@@ -1,0 +1,39 @@
+--- Makefile.SH	2011-11-15 20:12:35.000000000 -0500
++++ Eiffel73/unstable/library/persistency/database/sqlite3/Clib/Makefile.SH	2013-09-26 21:14:33.653639523 -0400
+@@ -49,23 +49,19 @@
+ 	$(MV) $? ../spec/$(PLATFORM)/lib
+ 	$(MAKE) clobber
+ 
+-SMODE = esqlite.c sqlite3.c
++SMODE = esqlite.c
+ 
+ LSRCS = $(SMODE)
+ 
+ MT_OBJECTS = \
+-	mtesqlite.o \
+-	mtsqlite3.o
++	mtesqlite.o
+ 
+ OBJECTS = \
+-	esqlite.o \
+-	sqlite3.o
++	esqlite.o
+ 
+ esqlite.o: esqlite.c
+ 	$(CC) -c $(CFLAGS) $? -o $@
+ 
+-sqlite3.o: sqlite3.c
+-	$(CC) -c $(CFLAGS) $? -o $@
+ 
+ libesqlite.a: $(OBJECTS)
+ 	$(RM) $@
+@@ -79,9 +75,6 @@
+ mtesqlite.o: esqlite.c
+ 	$(CC) -c $(MTCFLAGS) $? -o $@
+ 
+-mtsqlite3.o: sqlite3.c
+-	$(CC) -c $(MTCFLAGS) $? -o $@
+-
+ libmtesqlite.a: $(MT_OBJECTS)
+ 	$(RM) $@
+ 	$(AR) $@ $(MT_OBJECTS)

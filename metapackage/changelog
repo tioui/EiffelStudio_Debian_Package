@@ -1,0 +1,5 @@
+eiffelstudio (14.05-0ubuntu1~trusty1) trusty; urgency=low
+
+  * First version (Closes: #724715)
+
+ -- Louis M (Tioui key) <linux@tioui.com>  Thu, 19 Jun 2014 11:03:41 -0400
