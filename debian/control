@@ -1,4 +1,4 @@
-Source: eiffelstudio14.05
+Source: eiffelstudio15.01
 Section: devel
 Priority: optional
 Maintainer: Louis M <linux@tioui.com>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8.0.0), libgtk2.0-dev, libxtst-dev
 Standards-Version: 3.9.3
 Homepage: http://www.eiffel.com/
 
-Package: eiffelstudio14.05
+Package: eiffelstudio15.01
 Architecture: i386 amd64 sparc powerpc
 Depends: gcc, libatk1.0-0, ${shlibs:Depends}, libglib2.0-0, libgtk2.0-0, libgtk2.0-dev, libpango1.0-0, libx11-6, libxtst-dev, libxtst6, ${misc:Depends}, libsqlite3-dev
 Description: IDE and tools for the Eiffel language

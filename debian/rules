@@ -6,7 +6,7 @@
 # dh-make output file, you may use that output file without restriction.
 # This special exception was added by Craig Small in version 0.37 of dh-make.
 
-EIFFEL_DIR = $(CURDIR)/Eiffel_14.05
+EIFFEL_DIR = $(CURDIR)/Eiffel_15.01
 
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
@@ -15,6 +15,7 @@ export DH_OPTIONS=-v
 LDFLAGS = -O3
 
 CFLAGS += -O3 -fPIC -fno-stack-protector
+CPPFLAGS += -O3 -fPIC -fno-stack-protector
 
 ifeq ("${DEB_HOST_ARCH}","amd64")
 	eif_arch = linux-x86-64
@@ -29,7 +30,7 @@ ifeq ("${DEB_HOST_ARCH}","powerpc")
 	eif_arch = linux-ppc
 endif
 
-DEST_DIR = $(CURDIR)/debian/eiffelstudio14.05
+DEST_DIR = $(CURDIR)/debian/eiffelstudio15.01
 TEMP_DIR = $(CURDIR)/temp_root
 
 %:
@@ -51,31 +52,13 @@ override_dh_auto_binary-arch:
 	patch $(EIFFEL_DIR)/unstable/library/persistency/database/sqlite3/examples/liteterm/liteterm.ecf < $(CURDIR)/patches/liteterm.ecf.patch
 	patch $(EIFFEL_DIR)/unstable/library/persistency/database/sqlite3/Clib/Makefile.SH < $(CURDIR)/patches/Makefile.SH.patch
 	bash -c "cd $(EIFFEL_DIR)/unstable/library/persistency/database/sqlite3/Clib; LANG=C ISE_EIFFEL=$(EIFFEL_DIR) ISE_PLATFORM=${eif_arch} PATH=$$PATH:$(EIFFEL_DIR)/studio/spec/${eif_arch}/bin $(EIFFEL_DIR)/studio/spec/${eif_arch}/bin/finish_freezing"
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/tools/iron/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/tools/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/precomp/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/esbuilder/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/eweasel/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/compatible/precomp/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/compatible/library/vision2/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/compatible/library/obsolete/net/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/compatible/library/cURL/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/compatible/library/net/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/unstable/library/persistency/database/sqlite3/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/vision2_demo/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/library/vision2/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/library/obsolete/net/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/library/gobo/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/library/cURL/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/library/net/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/studio/wizards/others/precompile/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/studio/wizards/new_projects/vision2/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/studio/spec/unix
-#	ln -s ${eif_arch} $(EIFFEL_DIR)/studio/config/unix
 
 override_dh_auto_install:
 	./make_unix_layout ${eif_arch} $(EIFFEL_DIR) $(TEMP_DIR)
 	mv $(TEMP_DIR)/* $(DEST_DIR)/
+	cp -rp $(EIFFEL_DIR)/tools/iron/spec/${eif_arch} $(DEST_DIR)/usr/share/eiffelstudio-15.01/tools/iron/spec/unix
+	cp -p $(EIFFEL_DIR)/tools/spec/${eif_arch}/bin/iron $(DEST_DIR)/usr/bin/iron-15.01.9.6535
+	ln -s iron-15.01.9.6535 $(DEST_DIR)/usr/bin/iron-15.01
 	rm $(DEST_DIR)/usr/bin/estudio
 	rm $(DEST_DIR)/usr/bin/vision2_demo
 	rm $(DEST_DIR)/usr/bin/finish_freezing

@@ -6,18 +6,20 @@ if [ "$1" = "configure" ]; then
         # Add an alternative for estudio
         update-alternatives \
 	    --install \
-		/usr/bin/estudio estudio /usr/bin/estudio-14.05 14050 \
+		/usr/bin/estudio estudio /usr/bin/estudio-15.01 15011 \
             --slave \
 		/usr/bin/vision2_demo vision2_demo \
-					/usr/bin/vision2_demo-14.05 \
+					/usr/bin/vision2_demo-15.01 \
             --slave \
 		/usr/bin/finish_freezing finish_freezing \
-					/usr/bin/finish_freezing-14.05 \
+					/usr/bin/finish_freezing-15.01 \
             --slave \
 		/usr/bin/esbuilder esbuilder \
-					/usr/bin/esbuilder-14.05 \
+					/usr/bin/esbuilder-15.01 \
             --slave \
-		/usr/bin/ecb ecb /usr/bin/ecb-14.05 \
+		/usr/bin/ecb ecb /usr/bin/ecb-15.01 \
             --slave \
-		/usr/bin/ec ec /usr/bin/ec-14.05
+		/usr/bin/ec ec /usr/bin/ec-15.01 \
+			--slave \
+		/usr/bin/iron iron /usr/bin/iron-15.01
 fi
