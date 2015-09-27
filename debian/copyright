@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: EiffelStudio15.01
-Source: http://sourceforge.net/projects/eiffelstudio/files/EiffelStudio%2015.01/Build_96535/PorterPackage_15.01_96535.tar/download
+Upstream-Name: EiffelStudio15.08
+Source: http://sourceforge.net/projects/eiffelstudio/files/EiffelStudio%2015.08/Build_97862/PorterPackage_15.08_97862.tar/download
 
 Files: *
 Copyright: Copyright (c) 1984-2015, Eiffel Software
