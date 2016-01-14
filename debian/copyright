@@ -1,13 +1,13 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: EiffelStudio15.08
-Source: http://sourceforge.net/projects/eiffelstudio/files/EiffelStudio%2015.08/Build_97862/PorterPackage_15.08_97862.tar/download
+Upstream-Name: EiffelStudio15.12
+Source: http://sourceforge.net/projects/eiffelstudio/files/EiffelStudio%2015.12/Build_98308/
 
 Files: *
 Copyright: Copyright (c) 1984-2015, Eiffel Software
 License: GPL-2+ (see http://www.eiffel.com/licensing/gpl.txt, see /usr/share/common-licenses/GPL-2 )
 
 Files: debian/*
-Copyright: Copyright 2015 Louis M <linux@tioui.com>
+Copyright: Copyright 2016 Louis M <linux@tioui.com>
 License: GPL-2+
 
 License: GPL-2+

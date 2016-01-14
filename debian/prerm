@@ -3,5 +3,5 @@
 set -e
 
 if [ "$1" = remove ]; then
-	update-alternatives --remove estudio /usr/bin/estudio-15.08
+	update-alternatives --remove estudio /usr/bin/estudio-15.12
 fi

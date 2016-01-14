@@ -1,5 +1,5 @@
 --- sqlite-safe.ecf	2012-01-11 10:01:42.000000000 -0500
-+++ Eiffel_15.01/unstable/library/persistency/database/sqlite3/sqlite-safe.ecf	2013-09-26 21:28:53.005649578 -0400
++++ Eiffel_15.12/unstable/library/persistency/database/sqlite3/sqlite-safe.ecf	2013-09-26 21:28:53.005649578 -0400
 @@ -36,6 +36,11 @@
  				<multithreaded value="true"/>
  			</condition>
