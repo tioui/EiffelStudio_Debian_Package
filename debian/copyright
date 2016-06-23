@@ -1,9 +1,9 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: EiffelStudio15.12
-Source: http://sourceforge.net/projects/eiffelstudio/files/EiffelStudio%2015.12/Build_98308/
+Upstream-Name: EiffelStudio16.05
+Source: https://sourceforge.net/projects/eiffelstudio/files/EiffelStudio%2016.05/Build_98814/
 
 Files: *
-Copyright: Copyright (c) 1984-2015, Eiffel Software
+Copyright: Copyright (c) 1984-2016, Eiffel Software
 License: GPL-2+ (see http://www.eiffel.com/licensing/gpl.txt, see /usr/share/common-licenses/GPL-2 )
 
 Files: debian/*

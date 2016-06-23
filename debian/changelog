@@ -1,6 +1,6 @@
-eiffelstudio15.12 (15.12.9.8308-0ubuntu1~trusty1) trusty; urgency=low
+eiffelstudio16.05 (16.05.9.8814-0ubuntu1~trusty1) trusty; urgency=low
 
   * Initial release (Closes: #724715)
 
- -- Louis M (Tioui key) <linux@tioui.com>  Mon, 04 Jan 2016 16:47:48 +0000
+ -- Louis M (Tioui key) <linux@tioui.com>  Fri, 03 Jun 2016 16:31:58 +0000
 

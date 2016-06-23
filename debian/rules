@@ -6,7 +6,7 @@
 # dh-make output file, you may use that output file without restriction.
 # This special exception was added by Craig Small in version 0.37 of dh-make.
 
-EIFFEL_DIR = $(CURDIR)/Eiffel_15.12
+EIFFEL_DIR = $(CURDIR)/Eiffel_16.05
 
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
@@ -30,7 +30,7 @@ ifeq ("${DEB_HOST_ARCH}","powerpc")
 	eif_arch = linux-ppc
 endif
 
-DEST_DIR = $(CURDIR)/debian/eiffelstudio15.12
+DEST_DIR = $(CURDIR)/debian/eiffelstudio16.05
 TEMP_DIR = $(CURDIR)/temp_root
 
 %:
@@ -56,9 +56,9 @@ override_dh_auto_binary-arch:
 override_dh_auto_install:
 	./make_unix_layout ${eif_arch} $(EIFFEL_DIR) $(TEMP_DIR)
 	mv $(TEMP_DIR)/* $(DEST_DIR)/
-	cp -rp $(EIFFEL_DIR)/tools/iron/spec/${eif_arch} $(DEST_DIR)/usr/share/eiffelstudio-15.12/tools/iron/spec/unix
-	cp -p $(EIFFEL_DIR)/tools/spec/${eif_arch}/bin/iron $(DEST_DIR)/usr/bin/iron-15.12.9.8308
-	ln -s iron-15.12.9.8308 $(DEST_DIR)/usr/bin/iron-15.12
+	cp -rp $(EIFFEL_DIR)/tools/iron/spec/${eif_arch} $(DEST_DIR)/usr/share/eiffelstudio-16.05/tools/iron/spec/unix
+	cp -p $(EIFFEL_DIR)/tools/spec/${eif_arch}/bin/iron $(DEST_DIR)/usr/bin/iron-16.05.9.8814
+	ln -s iron-16.05.9.8814 $(DEST_DIR)/usr/bin/iron-16.05
 	rm $(DEST_DIR)/usr/bin/estudio
 	rm $(DEST_DIR)/usr/bin/vision2_demo
 	rm $(DEST_DIR)/usr/bin/finish_freezing

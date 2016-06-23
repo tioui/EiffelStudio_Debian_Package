@@ -14,11 +14,11 @@ Building the package
 
 ***
 
-	bzr dh-make eiffelstudio15.12 15.12.9.8308 PorterPackage_15.12_98308.tar # Using "m" for multiple binary
-	cp -rp debian/* eiffelstudio15.12/debian/
-	cp -rp patches eiffelstudio15.12/
-	bzr add eiffelstudio15.12/patches
-	cd eiffelstudio15.12/debian
+	bzr dh-make eiffelstudio16.05 16.05.9.8814 eiffelstudio-16.05.tar # Using "m" for multiple binary
+	cp -rp debian/* eiffelstudio16.05/debian/
+	cp -rp patches eiffelstudio16.05/
+	bzr add eiffelstudio16.05/patches
+	cd eiffelstudio16.05/debian
 	rm *.ex *.EX
 	bzr add postinst
 	bzr add prerm
@@ -33,7 +33,7 @@ To send to PPA
 
 	bzr builddeb -S # Changing the changelog file to send in another series (precise, trusty, etc.)
 	cd ../../build-area
-	dput ppa:eiffelstudio-team/ppa eiffelstudio15.12_15.12.9.8308-0ubuntu1~trusty1_source.changes
+	dput ppa:eiffelstudio-team/ppa eiffelstudio16.05_16.05.9.8814-0ubuntu1~trusty1_source.changes
 
 ***
 
