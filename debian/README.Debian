@@ -1,7 +1,7 @@
-eiffelstudio16.05 for Debian
+eiffelstudio17.01 for Debian
 -----------------------
 
-For EiffelStudio16.05 credit, see http://www.eiffel.com .
+For EiffelStudio17.01 credit, see http://www.eiffel.com .
 
 EiffelStudio is licensed GPL version 2 (see http://www.eiffel.com/licensing/gpl.txt, see /usr/share/common-licenses/GPL-2 )
 
@@ -9,4 +9,4 @@ For EiffelStudio licensing option: see http://www.eiffel.com/licensing/licensing
 
 Debian package by Louis M <linux@tioui.com> is licensed GPL-2+.
 
- -- Louis M <linux@tioui.com>  Fri, 03 Jun 2016 16:35:35 +0000
+ -- Louis M <linux@tioui.com>  Wed, 01 Feb 2017 23:15:03 +0000

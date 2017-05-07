@@ -1,7 +1,7 @@
---- sqlite.ecf	2012-01-11 10:01:42.000000000 -0500
-+++ Eiffel_16.05/unstable/library/persistency/database/sqlite3/sqlite.ecf	2013-09-26 21:47:44.221662812 -0400
-@@ -30,6 +30,11 @@
- 				<multithreaded value="false"/>
+--- sqlite.ecf	2016-11-28 09:18:06.000000000 -0500
++++ Eiffel_17.01/unstable/library/persistency/database/sqlite3/sqlite.ecf	2017-02-05 16:31:30.367067653 -0500
+@@ -29,6 +29,11 @@
+ 				<concurrency value="none"/>
  			</condition>
  		</external_library>
 +		<external_linker_flag value="-lsqlite3">

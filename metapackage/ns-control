@@ -3,9 +3,9 @@ Priority: optional
 Standards-Version: 3.9.2
 
 Package: eiffelstudio
-Version: 16.05
-Maintainer: Louis M (Tioui key) <linux@tioui.com>
-Depends: eiffelstudio16.05
+Version: 17.01
+Maintainer: Louis M (Linux Related) <linux@tioui.com>
+Depends: eiffelstudio17.01
 Architecture: all
 Description: IDE and tools for the Eiffel language
  EiffelStudio is a modern IDE offering the following features:
