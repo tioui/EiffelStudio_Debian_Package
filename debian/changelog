@@ -1,6 +1,6 @@
-eiffelstudio17.01 (17.01.9.9700-0ubuntu1~trusty3) trusty; urgency=low
+eiffelstudio17.05 (17.05.10.0416-0ubuntu1~trusty1) trusty; urgency=low
 
   * Initial release (Closes: #724715)
 
- -- Louis M (Linux Related) <linux@tioui.com>  Sun, 05 Feb 2017 21:59:31 +0000
+ -- Louis M (Linux Related) <linux@tioui.com>  Thu, 01 Jun 2017 15:15:57 +0000
 
