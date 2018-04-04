@@ -1,13 +1,13 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: EiffelStudio17.05
+Upstream-Name: EiffelStudio18.01
 Source: https://sourceforge.net/projects/eiffelstudio/files/EiffelStudio%2017.05/Build_100416/eiffelstudio-17.05.10.0416.tar
 
 Files: *
-Copyright: Copyright (c) 1984-2017, Eiffel Software
+Copyright: Copyright (c) 1984-2018, Eiffel Software
 License: GPL-2+ (see http://www.eiffel.com/licensing/gpl.txt, see /usr/share/common-licenses/GPL-2 )
 
 Files: debian/*
-Copyright: Copyright 2017 Louis M <linux@tioui.com>
+Copyright: Copyright 2018 Louis M <linux@tioui.com>
 License: GPL-2+
 
 License: GPL-2+

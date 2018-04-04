@@ -14,15 +14,15 @@ Building the package
 
 ***
 
-	bzr dh-make eiffelstudio17.05 17.05.10.0416 eiffelstudio-17.05.10.0416.tar # Using "s" for multiple binary
-	cp -rp debian/* eiffelstudio17.05/debian/
-	cp -rp patches eiffelstudio17.05/
-	bzr add eiffelstudio17.05/patches
-	cd eiffelstudio17.05/debian
+	bzr dh-make eiffelstudio18.01 18.01.10.1424 eiffelstudio-18.01.10.1424.tar # Using "s" for binary
+	cp -rp debian/* eiffelstudio18.01/debian/
+	cp -rp patches eiffelstudio18.01/
+	bzr add eiffelstudio18.01/patches
+	cd eiffelstudio18.01/debian
 	rm *.ex *.EX
 	bzr add postinst
 	bzr add prerm
-	bzr builddeb -- -us -uc
+	bzr builddeb -- -us -uc # Test build on local machine (optionnal)
 
 ***
 
@@ -33,7 +33,7 @@ To send to PPA
 
 	bzr builddeb -S # Changing the changelog file to send in another series (precise, trusty, etc.)
 	cd ../../build-area
-	dput ppa:eiffelstudio-team/ppa eiffelstudio17.05_17.05.10.0416-0ubuntu1~trusty1_source.changes
+	dput ppa:eiffelstudio-team/ppa eiffelstudio18.01_18.01.10.1424-0ubuntu1~trusty1_source.changes
 
 ***
 
