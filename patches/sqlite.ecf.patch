@@ -1,5 +1,5 @@
 --- sqlite.ecf	2016-11-28 09:18:06.000000000 -0500
-+++ Eiffel_18.01/unstable/library/persistency/database/sqlite3/sqlite.ecf	2017-02-05 16:31:30.367067653 -0500
++++ Eiffel_19.05/unstable/library/persistency/database/sqlite3/sqlite.ecf	2017-02-05 16:31:30.367067653 -0500
 @@ -29,6 +29,11 @@
  				<concurrency value="none"/>
  			</condition>

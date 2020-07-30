@@ -1,5 +1,5 @@
 --- insert_and_print/example.ecf	2016-11-25 10:01:29.000000000 -0500
-+++ Eiffel_18.01/unstable/library/persistency/database/sqlite3/examples/insert_and_print/example.ecf	2017-02-05 16:37:49.322124728 -0500
++++ Eiffel_19.05/unstable/library/persistency/database/sqlite3/examples/insert_and_print/example.ecf	2017-02-05 16:37:49.322124728 -0500
 @@ -14,7 +14,7 @@
  			<concurrency use="none"/>
  		</capability>

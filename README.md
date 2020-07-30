@@ -14,11 +14,11 @@ Building the package
 
 ***
 
-	bzr dh-make eiffelstudio18.01 18.01.10.1424 eiffelstudio-18.01.10.1424.tar # Using "s" for binary
-	cp -rp debian/* eiffelstudio18.01/debian/
-	cp -rp patches eiffelstudio18.01/
-	bzr add eiffelstudio18.01/patches
-	cd eiffelstudio18.01/debian
+	bzr dh-make eiffelstudio19.05 19.05.10.3187 eiffelstudio-19.05.10.3187.tar # Using "s" for binary
+	cp -rp debian/* eiffelstudio19.05/debian/
+	cp -rp patches eiffelstudio19.05/
+	bzr add eiffelstudio19.05/patches
+	cd eiffelstudio19.05/debian
 	rm *.ex *.EX
 	bzr add postinst
 	bzr add prerm
@@ -31,9 +31,9 @@ To send to PPA
 
 ***
 
-	bzr builddeb -S # Changing the changelog file to send in another series (precise, trusty, etc.)
+	bzr builddeb -S # Changing the changelog file to send in another series (xenial, bionic, etc.)
 	cd ../../build-area
-	dput ppa:eiffelstudio-team/ppa eiffelstudio18.01_18.01.10.1424-0ubuntu1~trusty1_source.changes
+	dput ppa:eiffelstudio-team/ppa eiffelstudio19.05_19.05.10.3187-0ubuntu1~bionic1_source.changes
 
 ***
 

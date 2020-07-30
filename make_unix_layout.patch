@@ -1,0 +1,12 @@
+*** make_unix_layout	2018-12-13 02:12:14.000000000 -0500
+--- make_unix_layout_new	2019-01-16 19:29:17.082672742 -0500
+***************
+*** 67,72 ****
+--- 67,73 ----
+  cp -r $ISE_EIFFEL/experimental $LIB_DIR
+  cp -r $ISE_EIFFEL/contrib $LIB_DIR
+  cp -r $ISE_EIFFEL/unstable $LIB_DIR
++ cp -r $ISE_EIFFEL/C_library $LIB_DIR
+  
+  # Copy precompile without EIFGENs and remove WEL files
+  mkdir -p $SHARE_DIR/precomp/spec/$UNIX_PLATFORM

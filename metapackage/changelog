@@ -1,5 +1,5 @@
-eiffelstudio (18.01-0ubuntu1~xenial1) xenial; urgency=low
+eiffelstudio (19.05-0ubuntu1~bionic1) bionic; urgency=low
 
   * First version (Closes: #724715)
 
- -- Louis M (Linux Related) <linux@tioui.com>  Mon, 02 Apr 2018 20:18:50 +0000
+ -- Louis M <linux@tioui.com>  Wed, 26 Jun 2019 21:00:14 +0000

@@ -1,5 +1,5 @@
 --- Makefile.SH	2011-11-15 20:12:35.000000000 -0500
-+++ Eiffel_18.01/unstable/library/persistency/database/sqlite3/Clib/Makefile.SH	2013-09-26 21:14:33.653639523 -0400
++++ Eiffel_19.05/unstable/library/persistency/database/sqlite3/Clib/Makefile.SH	2013-09-26 21:14:33.653639523 -0400
 @@ -49,23 +49,19 @@
  	$(MV) $? ../spec/$(PLATFORM)/lib
  	$(MAKE) clobber
